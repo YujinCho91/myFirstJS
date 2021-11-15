@@ -218,6 +218,7 @@ if (markBMI > johnBMI) {
 }
 
 //type conversion
+/*
 const inputYear = "1991";
 console.log(Number(inputYear), inputYear);
 console.log(Number(inputYear) + 18);
@@ -240,3 +241,48 @@ console.log(n);
 
 console.log(2 + 3 + 4 + "5");
 console.log("10" - "4" - "3" - 2 + "5");
+*/
+
+//5 falsy values：0，‘’， undefined, null, NaN
+/*
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Jonas"));
+console.log(Boolean({}));
+console.log(Boolean(""));
+
+const money = 0;
+if (money) {
+  console.log("Dont's spend it all :)");
+} else {
+  console.log("You should get a job");
+}
+
+let height;
+if (height) {
+  console.log("YAY!Height is defined");
+} else {
+  console.log("Height is UNDEFINED");
+}*/
+
+const age = "18";
+if (age === 18) console.log("You just became an adult(strict)");
+
+if (age == 18) console.log("You just became an adult(loose)");
+
+const favorite = Number(prompt("What's your favorite number?"));
+console.log(favorite);
+console.log(typeof favorite);
+
+if (favorite === 23) {
+  //23 ===23
+  console.log("Cool!23 is an amazing number!");
+} else if (favorite === 7) {
+  console.log("7 is also a cool number!");
+} else if (favorite === 9) {
+  console.log("9 is also a cool number");
+} else {
+  console.log("Number is not 23 or 7 or 9");
+}
+
+if (favorite !== 23) console.log("Why not 23?");
