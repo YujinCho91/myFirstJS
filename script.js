@@ -202,20 +202,20 @@ GOOD LUCK*/
 
 //Data1
 
-const markMass = 95;
-const markHeight = 1.88;
-const johnMass = 85;
-const johnHeight = 1.76;
+// const markMass = 95;
+// const markHeight = 1.88;
+// const johnMass = 85;
+// const johnHeight = 1.76;
 
-const markBMI = markMass / markHeight ** 2;
-const johnBMI = johnMass / (johnHeight * johnHeight);
-const markHigherBMI = markBMI > johnBMI;
+// const markBMI = markMass / markHeight ** 2;
+// const johnBMI = johnMass / (johnHeight * johnHeight);
+// const markHigherBMI = markBMI > johnBMI;
 
-if (markBMI > johnBMI) {
-  console.log(`Mark's BMI(${markBMI}) is higher than John's (${johnBMI})`);
-} else {
-  console.log(`John's BMI(${johnBMI}) is higher than Mark's (${markBMI})`);
-}
+// if (markBMI > johnBMI) {
+//   console.log(`Mark's BMI(${markBMI}) is higher than John's (${johnBMI})`);
+// } else {
+//   console.log(`John's BMI(${johnBMI}) is higher than Mark's (${markBMI})`);
+// }
 
 //type conversion
 /*
@@ -247,7 +247,7 @@ console.log("10" - "4" - "3" - 2 + "5");
 /*
 console.log(Boolean(0));
 console.log(Boolean(undefined));
-console.log(Boolean("Jonas"));
+console.log(Boolean("Jonas"));  
 console.log(Boolean({}));
 console.log(Boolean(""));
 
@@ -265,24 +265,49 @@ if (height) {
   console.log("Height is UNDEFINED");
 }*/
 
-const age = "18";
-if (age === 18) console.log("You just became an adult(strict)");
+// const age = "18";
+// if (age === 18) console.log("You just became an adult(strict)");
 
-if (age == 18) console.log("You just became an adult(loose)");
+// if (age == 18) console.log("You just became an adult(loose)");
 
-const favorite = Number(prompt("What's your favorite number?"));
-console.log(favorite);
-console.log(typeof favorite);
+// const favorite = Number(prompt("What's your favorite number?"));
+// console.log(favorite);
+// console.log(typeof favorite);
 
-if (favorite === 23) {
-  //23 ===23
-  console.log("Cool!23 is an amazing number!");
-} else if (favorite === 7) {
-  console.log("7 is also a cool number!");
-} else if (favorite === 9) {
-  console.log("9 is also a cool number");
+// if (favorite === 23) {
+//   //23 ===23
+//   console.log("Cool!23 is an amazing number!");
+// } else if (favorite === 7) {
+//   console.log("7 is also a cool number!");
+// } else if (favorite === 9) {
+//   console.log("9 is also a cool number");
+// } else {
+//   console.log("Number is not 23 or 7 or 9");
+// }
+
+// if (favorite !== 23) console.log("Why not 23?");
+
+const hasDriversLicense = true; //A
+const hasGoodVision = true; //B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if (shouldDrive) {
+//   console.log("Sarah is able to drive!");
+// } else {
+//   console.log("Someone else should drive...");
+// }
+
+const isTired = true; //C
+console.log(hasDriversLicense || hasGoodVision || isTired);
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log("Sarah is able to drive!");
 } else {
-  console.log("Number is not 23 or 7 or 9");
+  console.log("Someone else should drive...");
 }
-
-if (favorite !== 23) console.log("Why not 23?");
